@@ -115,3 +115,12 @@ def search_projects(request):
         message = "You haven't searched for any user"
 
         return render(request, 'search.html', {"message":message})
+
+
+class ProjectList(APIView):
+    def get(self, request, format=None):
+        allprojects = Projects.objects.all()
+        serializers = ProjectSerializer(allprojects, many=True)
+        return Response(serializers.data)
+        permission_classes = (IsAdminOrReadOnly,)
+
