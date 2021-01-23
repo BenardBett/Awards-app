@@ -20,3 +20,7 @@ urlpatterns = [
     path('api/profiles', views.ProfileList.as_view()),
     path(r'ratings/', include('star_ratings.urls', namespace='ratings')),
 ]
+
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
