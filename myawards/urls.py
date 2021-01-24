@@ -20,6 +20,6 @@ from django.conf import settings
 from rest_framework.authtoken.views import obtain_auth_token
 
 urlpatterns = [
-    path(r'^admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('', include('awardsapp.urls')),
 ]

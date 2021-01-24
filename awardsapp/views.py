@@ -1,8 +1,14 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
-from django.shortcuts import render
-
+from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
+from django.contrib import messages
+from .forms import *
+from .models import *
+from rest_framework.response import Response
+from rest_framework.views import APIView
+from .serializer import *
+from .permissions import IsAdminOrReadOnly
 # Create your views here.
 
 @login_required(login_url='/accounts/login/')
@@ -13,7 +19,7 @@ def home(request):
     }
     return render(request, 'index.html', locals())
 
-ef registration(request):
+def registration(request):
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
