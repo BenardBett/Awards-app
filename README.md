@@ -23,27 +23,22 @@ This is a django-python application where developers can upload their projects a
 
 
 A project can be rated based on 3 different criteria
-<precode>
-<code>
+  
     Design
     Usability
     Content
-    <code>
-    <precode>
+ 
     These criteria can be reviewed on a scale of 1-10 and the average score is taken.
 
 # User stories
 As a user, you can:
-<precode>
-<code>
+
     View posted projects and their details.
     Post a project to be rated/reviewed
     Rate/ review other users' projects
     Search for projects 
     View projects overall score
     View my profile page.
-<code>
-<precode>
 
 ## System Features/Objectives
 
@@ -53,15 +48,13 @@ Projects  have a Title, an image of the project's landing page, a detailed descr
 
 ### Profile
 Project have a user profile that has the following information:
-<precode>
-<code>
+
     Profile picture of the user.
     User Bio
     Projects the user has posted
     A contact information of the user. 
     An Authentication System 
-    <code>
-    <precode>
+
     The application  have a solid authentication system that allows users to sign up or log in to the application before posting or rating a project.
 
 
@@ -76,9 +69,7 @@ Projects- This endpoint return information pertaining to all the projects posted
 
 # Getting Started.
 
-    These instructions will get you a copy of the project up and running on a local host.
-<precode>
-<code>
+    These instructions will get you a copy of the project up and running on a local host
     Step 1: git clone
     Step 2: Enter the Project root folder
 
@@ -90,21 +81,17 @@ Projects- This endpoint return information pertaining to all the projects posted
 
     source virtual/bin/activate
     install pip using curl
-<code>
-<precode>
 
 ## Deployment
 
     Deploying the Django Apps to Heroku to view.
 
 ## Built With
-<precode>
-<code>
+
     Python3.8 - Python is a programming language that lets you work quickly and integrate systems more effectively
     Django - Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design
     postgresql - PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.
-<code>
-<precode>
+
 
 ##  Known-Bugs
 
